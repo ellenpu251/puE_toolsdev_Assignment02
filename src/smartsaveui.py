@@ -76,10 +76,10 @@ class SimpleUI(QtWidgets.QDialog):
    self.setLayout(self.main_layout)
 
  def create_connections(self):
-    self.browse_btn.clicked.connect(self.browse)
-    self.cancel_btn.clicked.connect(self.cancel)
-    self.save_btn.clicked.connect(self.save)
-    self.save_incr_btn.clicked.connect(self.increment_and_save)
+   self.browse_btn.clicked.connect(self.browse)
+   self.cancel_btn.clicked.connect(self.cancel)
+   self.save_btn.clicked.connect(self.save)
+   self.save_incr_btn.clicked.connect(self.increment_and_save)
 
  def _populate_scenefile_properties(self):
     self.scene.dir = self.dir_le.text()

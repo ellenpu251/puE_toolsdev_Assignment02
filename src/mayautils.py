@@ -22,10 +22,10 @@ class SceneFile(object):
     def __init__(self, dir="", descriptor='main', version=1, ext="ma"):
         FilePath = cmds.file(q=True, sn=True)
         if(FilePath==""):
-            self._dir = Path(dir)
-            self.descriptor = descriptor
-            self.version = version
-            self.ext = ext
+         self._dir = Path(dir)
+         self.descriptor = descriptor
+         self.version = version
+         self.ext = ext
         else:
             parts = os.path.split(FilePath)
             self._dir = parts[0]
