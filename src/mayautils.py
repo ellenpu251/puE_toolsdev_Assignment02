@@ -36,6 +36,10 @@ class SceneFile(object):
             self.ext = Split2[1]
 
     @property
+    def dir(self):
+        return self._dir
+
+    @dir.setter
     def dir(self,val):
         self._dir=Path(val)
 
